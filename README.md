@@ -134,7 +134,7 @@ Su función es iniciar el proceso automáticamente sin intervención del usuario
 Captura:
 
 <p align="center">
-  <img src="img/scheduleTrigger.png" width="700">
+  <img src="img/scheduleTrigger.png" width="500">
 </p>
 
 ### 8.2 HTTP Request
@@ -155,7 +155,7 @@ La API devuelve información en formato JSON con las diferentes tasas de cambio.
 
 Captura:
  <p align="center">
-  <img src="img/HTTPrequest.png" width="700">
+  <img src="img/HTTPrequest.png" width="500">
 </p>
 
 ### 8.3 Procesamiento de información con Set
@@ -180,7 +180,7 @@ Ejemplo del mensaje generado:
 Captura:
 
 <p align="center">
-  <img src="img/set.png" width="700">
+  <img src="img/set.png" width="500">
 </p>
 
 ### 8.4 Integración con Telegram
@@ -192,11 +192,11 @@ El nodo Telegram tiene como función enviar automáticamente el mensaje generado
 Captura:
 
 <p align="center">
-  <img src="img/telegram.error.png" width="700">
+  <img src="img/telegram.error.png" width="500">
 </p>
 con telegram no queria funcionar porque el bot creado no habia recibido ningun mensaje
 <p align="center">
-  <img src="img/telegram.bien.png" width="700">
+  <img src="img/telegram.bien.png" width="500">
 </p>
 
 
@@ -212,7 +212,7 @@ Envía el resultado a Telegram.
 Captura del mensaje recibido:
 
 <p align="center">
-  <img src="img/mensaje1.png" width="700">
+  <img src="img/mensaje1.png" width="300">
 </p>
 
 ## 10. Mejoras implementadas
@@ -225,7 +225,7 @@ Libra esterlina (GBP).
 
 Esto permite que el usuario reciba más información en un solo mensaje.
 <p align="center">
-  <img src="img/mensaje2.png" width="700">
+  <img src="img/mensaje2.png" width="300">
 </p>
 
 ## 11. Resultados obtenidos
@@ -245,7 +245,7 @@ La realización de este proyecto permitió comprender el funcionamiento de los w
 Además, se aprendió a integrar servicios externos mediante APIs, utilizar herramientas como Telegram para entregar información automáticamente y la creacion del bot.
 
 <p align="center">
-  <img src="img/creacion-del-bot.png" width="700">
+  <img src="img/creacion-del-bot.png" width="300">
 </p>
 
 El resultado final fue una solución funcional, escalable y con posibilidad de agregar nuevas monedas o funcionalidades en el futuro.
