@@ -1,21 +1,31 @@
  # Conversor Inteligente de Monedas con n8n
- Información del proyecto
+ 
+ ### Información del proyecto
 
 Proyecto: Automatización con n8n - Conversor Inteligente de Monedas
+
+
 Integrantes:
 
-Mariana Colmenarez
-Jessica Urrego
 
-Asignatura: Automatización de procesos
+### Mariana Colmenarez
+
+### Jessica Urrego
+
+
+Asignatura: Inteligencia Artificial 1
+
 Herramienta principal: n8n
+
 Integración utilizada: Telegram Bot API
+
+trainer: Kevin Jimenez
 
 
 <p align="center">
   <img src="img/workflow.png" width="700">
 </p>
----
+--- 
 
 ## 1. Introducción
 
@@ -24,11 +34,13 @@ Actualmente, consultar el valor de monedas extranjeras requiere ingresar manualm
 El sistema consulta automáticamente el valor actualizado de diferentes monedas internacionales y realiza la conversión a pesos colombianos (COP). Posteriormente, envía el resultado mediante un bot de Telegram.
 
 ## 2. Objetivo del proyecto
-Objetivo general
+
+### Objetivo general
 
 Diseñar un workflow en n8n capaz de consultar automáticamente tasas de cambio, procesar la información obtenida desde una API externa y enviar los resultados mediante Telegram.
 
-Objetivos específicos
+### Objetivos específicos
+
 Crear un flujo automático utilizando n8n.
 Integrar una API pública de conversión de monedas.
 Procesar información en formato JSON.
@@ -41,19 +53,21 @@ Muchas personas necesitan conocer constantemente el valor actualizado de monedas
 Para solucionar este problema se desarrolló una automatización que realiza la consulta de manera programada y entrega la información directamente al usuario.
 
 ## 4. Investigación realizada
-¿Qué es n8n?
 
-n8n es una plataforma de automatización de procesos que permite conectar diferentes aplicaciones y servicios mediante workflows.
+### ¿Qué es n8n?
+
+n8n es una plataforma de automatización de procesos que permite conectar diferentes aplicaciones y servicios mediante 
+workflows.
 
 Un workflow está compuesto por nodos que realizan tareas específicas, como recibir información, consultar APIs, procesar datos o enviar mensajes.
 
-¿Qué es una API?
+### ¿Qué es una API?
 
 Una API (Application Programming Interface) permite que diferentes aplicaciones puedan comunicarse entre sí.
 
 En este proyecto se utilizó una API de tasas de cambio para obtener información actualizada sobre monedas internacionales.
 
-¿Qué es JSON?
+### ¿Qué es JSON?
 
 JSON es un formato utilizado para almacenar y transportar información entre aplicaciones.
 
@@ -104,7 +118,8 @@ Set
         ↓
 Telegram
 ## 8. Configuración paso a paso
-8.1 Schedule Trigger
+
+ ### 8.1 Schedule Trigger
 
 Este nodo permite ejecutar automáticamente el workflow.
 
@@ -118,9 +133,11 @@ Su función es iniciar el proceso automáticamente sin intervención del usuario
 
 Captura:
 
-(Agregar imagen del Schedule Trigger)
+<p align="center">
+  <img src="img/scheduleTrigger.png" width="700">
+</p>
 
-8.2 HTTP Request
+### 8.2 HTTP Request
 
 Este nodo realiza la conexión con la API externa.
 
@@ -137,10 +154,11 @@ https://open.er-api.com/v6/latest/USD
 La API devuelve información en formato JSON con las diferentes tasas de cambio.
 
 Captura:
+ <p align="center">
+  <img src="img/HTTPrequest.png" width="700">
+</p>
 
-(Agregar imagen del HTTP Request)
-
-8.3 Procesamiento de información con Set
+### 8.3 Procesamiento de información con Set
 
 El nodo Set permite organizar la información recibida y crear el mensaje que será enviado.
 
@@ -161,9 +179,11 @@ Ejemplo del mensaje generado:
  Actualizado automáticamente con n8n
 Captura:
 
-(Agregar imagen del nodo Set)
+<p align="center">
+  <img src="img/set.png" width="700">
+</p>
 
-8.4 Integración con Telegram
+### 8.4 Integración con Telegram
 
 Se creó un bot mediante BotFather y se conectó con n8n utilizando el token de acceso.
 
@@ -171,7 +191,14 @@ El nodo Telegram tiene como función enviar automáticamente el mensaje generado
 
 Captura:
 
-(Agregar imagen del nodo Telegram)
+<p align="center">
+  <img src="img/telegram.error.png" width="700">
+</p>
+con telegram no queria funcionar porque el bot creado no habia recibido ningun mensaje
+<p align="center">
+  <img src="img/telegram.bien.png" width="700">
+</p>
+
 
 ## 9. Resultado obtenido
 
@@ -184,7 +211,9 @@ Genera un mensaje personalizado.
 Envía el resultado a Telegram.
 Captura del mensaje recibido:
 
-(Agregar captura del mensaje en Telegram)
+<p align="center">
+  <img src="img/mensaje1.png" width="700">
+</p>
 
 ## 10. Mejoras implementadas
 
@@ -195,6 +224,9 @@ Euro (EUR).
 Libra esterlina (GBP).
 
 Esto permite que el usuario reciba más información en un solo mensaje.
+<p align="center">
+  <img src="img/mensaje2.png" width="700">
+</p>
 
 ## 11. Resultados obtenidos
 
@@ -210,7 +242,11 @@ Servicios de mensajería.
 
 La realización de este proyecto permitió comprender el funcionamiento de los workflows en n8n y la importancia de la automatización para reducir tareas repetitivas.
 
-Además, se aprendió a integrar servicios externos mediante APIs y utilizar herramientas como Telegram para entregar información automáticamente.
+Además, se aprendió a integrar servicios externos mediante APIs, utilizar herramientas como Telegram para entregar información automáticamente y la creacion del bot.
+
+<p align="center">
+  <img src="img/creacion-del-bot.png" width="700">
+</p>
 
 El resultado final fue una solución funcional, escalable y con posibilidad de agregar nuevas monedas o funcionalidades en el futuro.
 
