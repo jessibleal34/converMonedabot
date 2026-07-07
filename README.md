@@ -1,4 +1,4 @@
-Conversor Inteligente de Monedas con n8n
+ # Conversor Inteligente de Monedas con n8n
  Información del proyecto
 
 Proyecto: Automatización con n8n - Conversor Inteligente de Monedas
@@ -11,13 +11,19 @@ Asignatura: Automatización de procesos
 Herramienta principal: n8n
 Integración utilizada: Telegram Bot API
 
-1. Introducción
+
+<p align="center">
+  <img src="img/workflow.png" width="700">
+</p>
+---
+
+## 1. Introducción
 
 Actualmente, consultar el valor de monedas extranjeras requiere ingresar manualmente a diferentes plataformas o páginas web. Este proyecto propone una solución automatizada utilizando n8n, una API pública de tasas de cambio y Telegram.
 
 El sistema consulta automáticamente el valor actualizado de diferentes monedas internacionales y realiza la conversión a pesos colombianos (COP). Posteriormente, envía el resultado mediante un bot de Telegram.
 
-2. Objetivo del proyecto
+## 2. Objetivo del proyecto
 Objetivo general
 
 Diseñar un workflow en n8n capaz de consultar automáticamente tasas de cambio, procesar la información obtenida desde una API externa y enviar los resultados mediante Telegram.
@@ -28,13 +34,13 @@ Integrar una API pública de conversión de monedas.
 Procesar información en formato JSON.
 Realizar conversiones de monedas extranjeras a pesos colombianos.
 Enviar notificaciones automáticas mediante Telegram.
-3. Problema planteado
+## 3. Problema planteado
 
 Muchas personas necesitan conocer constantemente el valor actualizado de monedas extranjeras como dólar, euro o libra esterlina. Hacer esta consulta manualmente puede ser repetitivo y consumir tiempo.
 
 Para solucionar este problema se desarrolló una automatización que realiza la consulta de manera programada y entrega la información directamente al usuario.
 
-4. Investigación realizada
+## 4. Investigación realizada
 ¿Qué es n8n?
 
 n8n es una plataforma de automatización de procesos que permite conectar diferentes aplicaciones y servicios mediante workflows.
@@ -62,13 +68,13 @@ Ejemplo de respuesta recibida:
 
 n8n utiliza estos datos para extraer los valores necesarios.
 
-5. Herramientas utilizadas
+## 5. Herramientas utilizadas
 Herramienta	Uso
-n8n	Creación del workflow
+n8n	                 Creación del workflow
 Exchange Rate API	Consulta de tasas de cambio
 Telegram Bot API	Envío automático de mensajes
-JSON	Manejo de datos recibidos
-6. API utilizada
+JSON	             Manejo de datos recibidos
+## 6. API utilizada
 Exchange Rate API
 
 API utilizada:
@@ -83,7 +89,7 @@ Función:
 
 Obtener las tasas de cambio actuales tomando como moneda base el dólar estadounidense (USD).
 
-7. Desarrollo del Workflow
+## 7. Desarrollo del Workflow
 
 El flujo creado en n8n está compuesto por los siguientes nodos:
 
@@ -97,7 +103,7 @@ Set
         |
         ↓
 Telegram
-8. Configuración paso a paso
+## 8. Configuración paso a paso
 8.1 Schedule Trigger
 
 Este nodo permite ejecutar automáticamente el workflow.
@@ -146,13 +152,13 @@ Conversión de otras monedas.
 
 Ejemplo del mensaje generado:
 
-💱 Conversor Inteligente de Monedas
+ Conversor Inteligente de Monedas
 
 🇺🇸 USD → 4105 COP
 🇪🇺 EUR → 4500 COP
 🇬🇧 GBP → 5200 COP
 
-🤖 Actualizado automáticamente con n8n
+ Actualizado automáticamente con n8n
 Captura:
 
 (Agregar imagen del nodo Set)
@@ -167,7 +173,7 @@ Captura:
 
 (Agregar imagen del nodo Telegram)
 
-9. Resultado obtenido
+## 9. Resultado obtenido
 
 El sistema logró ejecutar correctamente la automatización:
 
@@ -180,7 +186,7 @@ Captura del mensaje recibido:
 
 (Agregar captura del mensaje en Telegram)
 
-10. Mejoras implementadas
+## 10. Mejoras implementadas
 
 Como mejora adicional al reto inicial, se agregó soporte para múltiples monedas:
 
@@ -190,7 +196,7 @@ Libra esterlina (GBP).
 
 Esto permite que el usuario reciba más información en un solo mensaje.
 
-11. Resultados obtenidos
+## 11. Resultados obtenidos
 
 Se obtuvo un sistema funcional capaz de automatizar la consulta de tasas de cambio y enviar información actualizada sin necesidad de realizar consultas manuales.
 
@@ -200,7 +206,7 @@ Automatización de procesos.
 APIs externas.
 Procesamiento de datos JSON.
 Servicios de mensajería.
-12. Conclusiones
+## 12. Conclusiones
 
 La realización de este proyecto permitió comprender el funcionamiento de los workflows en n8n y la importancia de la automatización para reducir tareas repetitivas.
 
